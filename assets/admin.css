@@ -1,0 +1,308 @@
+/* ============================================================
+   Prop Theme Changer – Admin CSS  v4.0.0 – Prince Peala
+   ============================================================ */
+
+/* ── Layout ── */
+.ptc-wrap { max-width: 1100px; }
+
+.ptc-version {
+    font-size: 12px;
+    color: #8c8f94;
+    font-weight: 400;
+    vertical-align: middle;
+    margin-left: 6px;
+}
+
+.ptc-back-link {
+    display: inline-block;
+    margin: 6px 0 18px;
+    color: #646970;
+    text-decoration: none;
+    font-size: 13px;
+}
+.ptc-back-link:hover { color: #2271b1; }
+
+/* ── Cards ── */
+.ptc-card {
+    background: #fff;
+    border: 1px solid #c3c4c7;
+    border-radius: 4px;
+    padding: 20px 24px;
+    margin-bottom: 20px;
+}
+
+.ptc-card-title {
+    margin: 0 0 16px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #f0f0f1;
+    font-size: 15px;
+    font-weight: 600;
+    color: #1d2327;
+}
+
+/* ── Form table ── */
+.ptc-form-table th {
+    width: 200px;
+    padding: 16px 10px 16px 0;
+    vertical-align: top;
+    padding-top: 20px;
+}
+
+.ptc-form-table .required { color: #d63638; }
+
+/* ── Input prefix/suffix ── */
+.ptc-input-prefix-wrap {
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid #8c8f94;
+    border-radius: 3px;
+    overflow: hidden;
+    background: #fff;
+}
+
+.ptc-input-prefix,
+.ptc-input-suffix {
+    padding: 0 8px;
+    background: #f6f7f7;
+    color: #646970;
+    font-family: monospace;
+    font-size: 12px;
+    line-height: 30px;
+    height: 30px;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+.ptc-input-prefix { border-right: 1px solid #8c8f94; }
+.ptc-input-suffix { border-left:  1px solid #8c8f94; }
+
+.ptc-input-prefix-wrap input {
+    border: none !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    height: 30px;
+    padding: 0 8px;
+}
+.ptc-input-prefix-wrap input:focus { outline: none; }
+
+/* ── Selector preview ── */
+.ptc-selector-preview { margin-top: 6px !important; }
+.ptc-selector-preview code {
+    background: #ffffff;
+    color: #7dd3fc;
+    padding: 3px 8px;
+    border-radius: 3px;
+    font-size: 11px;
+    border: 1px solid #e8e8e8;
+}
+
+/* ── Time input ── */
+.ptc-time-input {
+    width: 130px !important;
+    font-family: monospace;
+}
+
+/* ── Palette couleurs récentes ── */
+.ptc-recent-palette {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 0 16px;
+    border-bottom: 1px solid #f0f0f1;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+}
+
+.ptc-recent-label {
+    font-size: 12px;
+    color: #646970;
+    font-weight: 600;
+    margin-right: 4px;
+}
+
+.ptc-recent-swatch {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    box-shadow: 0 0 0 1px rgba(0,0,0,.2);
+    cursor: pointer;
+    padding: 0;
+    transition: transform .15s, box-shadow .15s;
+}
+.ptc-recent-swatch:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 0 2px #2271b1;
+}
+
+/* ── Color table ── */
+.ptc-color-intro { margin-bottom: 16px; font-size: 13px; }
+
+.ptc-group-title {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    color: #50575e;
+    margin: 20px 0 8px;
+}
+
+.ptc-color-table { margin-bottom: 20px; }
+.ptc-color-table th { font-size: 12px; background: #f6f7f7; padding: 8px 12px; }
+.ptc-color-row td  { padding: 10px 12px; vertical-align: middle; }
+.ptc-color-row:hover { background: #f9f9f9; }
+
+/* ── Color chips ── */
+.ptc-color-chip-wrap { display: flex; align-items: center; gap: 8px; }
+
+.ptc-color-chip {
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    border-radius: 4px;
+    border: 1px solid rgba(0,0,0,.15);
+    flex-shrink: 0;
+    vertical-align: middle;
+}
+
+/* Damier pour les couleurs avec opacité */
+.ptc-checker {
+    position: relative;
+    background-image:
+        linear-gradient(45deg, #ccc 25%, transparent 25%),
+        linear-gradient(-45deg, #ccc 25%, transparent 25%),
+        linear-gradient(45deg, transparent 75%, #ccc 75%),
+        linear-gradient(-45deg, transparent 75%, #ccc 75%);
+    background-size: 8px 8px;
+    background-position: 0 0, 0 4px, 4px -4px, -4px 0;
+    background-color: #fff;
+}
+
+.ptc-preview-chip { transition: background .2s; }
+
+.ptc-arrow { color: #8c8f94; font-size: 16px; text-align: center; }
+
+/* ── Color field ── */
+.ptc-color-field-wrap { display: flex; align-items: center; gap: 8px; }
+
+.ptc-native-picker {
+    width: 36px;
+    height: 30px;
+    padding: 2px;
+    border: 1px solid #8c8f94;
+    border-radius: 3px;
+    cursor: pointer;
+    background: #fff;
+    flex-shrink: 0;
+}
+
+.ptc-color-input {
+    width: 240px !important;
+    font-family: monospace !important;
+    font-size: 12px !important;
+    letter-spacing: .02em;
+}
+
+.ptc-clear-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #8c8f94;
+    font-size: 14px;
+    padding: 2px 4px;
+    border-radius: 3px;
+    line-height: 1;
+}
+.ptc-clear-btn:hover { color: #d63638; background: #fce8e8; }
+
+/* ── Format badges ── */
+.ptc-format-hint { min-height: 18px; margin-top: 4px; }
+
+.ptc-format-badge {
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+    padding: 2px 7px;
+    border-radius: 3px;
+    line-height: 1.6;
+}
+
+.ptc-format-rgb  { background: #dbeafe; color: #1d4ed8; }
+.ptc-format-rgba { background: #fef3c7; color: #92400e; animation: ptc-pulse 2s ease-in-out infinite; }
+
+@keyframes ptc-pulse { 0%,100%{opacity:1} 50%{opacity:.65} }
+
+/* ── List table ── */
+.ptc-code {
+    background: #f6f7f7;
+    border: 1px solid #dcdcde;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 11px;
+}
+
+.ptc-id { font-size: 10px; color: #8c8f94; }
+.ptc-muted { color: #c3c4c7; }
+
+.ptc-badge {
+    display: inline-block;
+    background: #2271b1;
+    color: #fff;
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.ptc-cond-tag {
+    display: inline-block;
+    background: #f0f6fc;
+    color: #2271b1;
+    border: 1px solid #c3dcf5;
+    padding: 1px 6px;
+    border-radius: 3px;
+    font-size: 11px;
+    margin-right: 3px;
+}
+
+/* ── Bouton supprimer ── */
+.ptc-btn-delete { color: #d63638 !important; border-color: #d63638 !important; }
+.ptc-btn-delete:hover { background: #d63638 !important; color: #fff !important; }
+
+/* ── Bouton prévisualiser ── */
+.ptc-preview-btn { color: #2271b1 !important; }
+
+/* ── Empty state ── */
+.ptc-empty-state {
+    text-align: center;
+    padding: 60px 20px;
+    background: #fff;
+    border: 1px dashed #c3c4c7;
+    border-radius: 4px;
+    margin-top: 20px;
+    color: #646970;
+}
+.ptc-empty-state .dashicons { font-size: 48px; color: #c3c4c7; display: block; }
+.ptc-empty-state p { font-size: 15px; margin: 12px 0 20px; }
+
+/* ── Submit bar ── */
+.ptc-submit-bar {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    padding: 16px 0;
+    border-top: 1px solid #f0f0f1;
+    margin-top: 4px;
+}
+
+/* ── Import section ── */
+.ptc-import-section { margin-top: 28px; }
+.ptc-import-section textarea {
+    font-family: monospace;
+    font-size: 12px;
+    background: #f0f0f1;
+    color: #3c434a;
+    border-color: #3c434a;
+    resize: vertical;
+}
